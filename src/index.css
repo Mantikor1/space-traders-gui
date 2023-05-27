@@ -73,3 +73,46 @@ body {
 .login--form--button:hover {
   background-color: #2e3aa3;
 }
+
+.registration {
+  flex: 1;
+  background-color: #272727;
+  text-align: center;
+}
+
+.registration--header {
+  margin-top: 336px;
+  margin-bottom: 0;
+  color: #afafaf;
+}
+
+.registration--form--username {
+  margin-top: 32.5px;
+  width: 321px;
+  height: 52px;
+  box-shadow: none;
+  padding-left: 76px;
+  border-radius: 30px;
+  outline: none;
+  font-size: 20px;
+  border: 0px solid;
+  background: url("./assets/account_circle.svg") no-repeat 25px;
+  background-color: white;
+}
+
+.registration--form--button {
+  margin-top: 14.5px;
+  margin-bottom: 35px;
+  width: 399px;
+  height: 52px;
+  border-radius: 30px;
+  border: 0 solid;
+  font-size: 20px;
+  background-color: #262e73;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: #afafaf;
+}
+
+.registration--form--button:hover {
+  background-color: #2e3aa3;
+}
