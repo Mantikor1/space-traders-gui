@@ -1,16 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import EyeOpen from "../../assets/eye_open.svg";
-import useAuth from "../../Components/AuthContext";
+import AuthContext from "../../Components/AuthContext";
 
 export default function Registration() {
-  const { authTokens, setAuthTokens } = useAuth();
-
-  console.log(authTokens);
-
-  useEffect(() => {
-    setAuthTokens("new token");
-  }, [setAuthTokens]);
+  const { setAuthToken } = useContext(AuthContext);
 
   const [user, setUser] = useState({
     symbol: "",
@@ -73,13 +67,12 @@ export default function Registration() {
     setError("");
 
     const { data } = await response.json();
-    // const { data } = testData;
-    // console.log(data.token);
-    // const { data } = testData;
     setToken((prevToken) => ({
       ...prevToken,
       value: data.token,
     }));
+
+    setAuthToken(data.token);
   }
 
   function changeVisiblity() {

@@ -1,6 +1,10 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useState, useContext } from "react";
+import AuthContext from "../../Components/AuthContext";
+
 export default function Login() {
+  const navigate = useNavigate();
+  const { setAuthToken } = useContext(AuthContext);
   const [token, setToken] = useState("");
 
   function eventHandler(event) {
@@ -9,7 +13,8 @@ export default function Login() {
 
   function submitHandler(event) {
     event.preventDefault();
-    console.log(token);
+    setAuthToken(token);
+    navigate("dashboard");
   }
 
   return (
