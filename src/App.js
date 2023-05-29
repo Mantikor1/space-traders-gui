@@ -6,6 +6,7 @@ import LoginLayout from "./Pages/Login/LoginLayout";
 import DashboardLayout from "./Components/DashboardLayout";
 import Fleet from "./Pages/Fleet/Fleet";
 import AuthContext from "./Components/AuthContext";
+import AuthRequired from "./Components/AuthRequired";
 
 export default function App() {
   const [authToken, setAuthToken] = useState("");
@@ -18,8 +19,14 @@ export default function App() {
             <Route index element={<Login />} />
             <Route path="/registration" element={<Registration />} />
           </Route>
-          <Route path="/dashboard" element={<DashboardLayout />}>
-            <Route index element={<Fleet />} />
+          {/* This routes require authentication. 
+          The AuthRequired element makes a fetch request 
+          with the user token from context and either 
+          returns the outlet or the login page */}
+          <Route element={<AuthRequired />}>
+            <Route path="dashboard" element={<DashboardLayout />}>
+              <Route index element={<Fleet />} />
+            </Route>
           </Route>
         </Routes>
       </AuthContext.Provider>
