@@ -224,3 +224,44 @@ body {
   margin-left: 14px;
   font-size: 20px;
 }
+
+.fleet {
+  flex: 1;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #272727;
+  color: #afafaf;
+}
+
+.fleet--header {
+  margin-top: 36px;
+  margin-bottom: 35px;
+}
+
+.fleet--ship {
+  color: #afafaf;
+  display: flex;
+  padding-left: 31px;
+  padding-right: 31px;
+  height: 74px;
+  border: 2px solid #aaaa;
+  border-radius: 22px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.fleet--ship:hover {
+  background-color: #525252;
+}
+
+.fleet--ship--details {
+  margin-left: auto;
+  padding-left: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  line-break: none;
+  white-space: nowrap;
+}
