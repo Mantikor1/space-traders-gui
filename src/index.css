@@ -225,8 +225,36 @@ body {
   font-size: 20px;
 }
 
+.mainContent {
+  flex: 1;
+}
+
+.accountDetails {
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-top: 23px;
+  padding-right: 25px;
+  gap: 14px;
+}
+
+.accountDetails--credits {
+  color: #099f06;
+  font-size: 20px;
+  margin: 0;
+}
+
+.accountDetails--name {
+  color: #afafaf;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
 .fleet {
   flex: 1;
+  min-height: 100vh;
   padding-left: 32px;
   padding-right: 32px;
   background-color: #272727;
@@ -234,7 +262,7 @@ body {
 }
 
 .fleet--header {
-  margin-top: 36px;
+  margin-top: 0;
   margin-bottom: 35px;
 }
 
