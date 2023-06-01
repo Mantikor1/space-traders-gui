@@ -69,6 +69,7 @@ export default function ShipStatusNavbar() {
       <div className="shipStatusNavbar--nav">
         <NavLink
           to="."
+          end
           className={({ isActive }) =>
             isActive
               ? "shipStatusNavbar--nav--link--active"

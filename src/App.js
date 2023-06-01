@@ -9,6 +9,8 @@ import AuthContext from "./Components/AuthContext";
 import AuthRequired from "./Components/AuthRequired";
 import ShipStatus from "./Pages/Fleet/ShipStatus";
 import ShipStatusNavbar from "./Components/ShipStatusNavbar";
+import Navigation from "./Pages/Fleet/Navigation";
+import Cargo from "./Pages/Fleet/Cargo";
 
 export default function App() {
   const [authToken, setAuthToken] = useState("");
@@ -30,6 +32,8 @@ export default function App() {
               <Route index element={<Fleet />} />
               <Route path=":id" element={<ShipStatusNavbar />}>
                 <Route index element={<ShipStatus />} />
+                <Route path="navigation" element={<Navigation />} />
+                <Route path="cargo" element={<Cargo />} />
               </Route>
             </Route>
           </Route>
