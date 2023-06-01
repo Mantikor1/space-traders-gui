@@ -1,14 +1,27 @@
-import { Link, Outlet, useParams } from "react-router-dom";
+import { NavLink, Outlet, useParams } from "react-router-dom";
 import ArrowBack from "../assets/arrow_back.svg";
 import { useContext, useEffect, useState } from "react";
 import AuthContext from "./AuthContext";
 
 export default function ShipStatusNavbar() {
   const { authToken } = useContext(AuthContext);
+
+  // Get ship id from url parameters
   const params = useParams();
   const [shipDetails, setShipDetails] = useState({
     symbol: "",
-    frame: "",
+    frame: {
+      name: "",
+    },
+    nav: {
+      waypointSymbol: "",
+      status: "",
+      flightMode: "",
+    },
+    fuel: {
+      current: 0,
+      capacity: 0,
+    },
   });
 
   useEffect(() => {
@@ -30,10 +43,7 @@ export default function ShipStatusNavbar() {
       }
 
       const { data } = await response.json();
-      setShipDetails({
-        symbol: data.symbol,
-        frame: data.frame.name,
-      });
+      setShipDetails(data);
     };
     request();
   }, [authToken, params.id]);
@@ -41,33 +51,54 @@ export default function ShipStatusNavbar() {
   return (
     <div className="shipStatusNavbar">
       <div className="shipStatusNavbar--back--layout">
-        <Link to=".." style={{ textDecoration: "none" }}>
+        <NavLink to=".." style={{ textDecoration: "none" }}>
           <div className="shipStatusNavbar--back">
             <img src={ArrowBack} alt="Arrow Back" width="20px" height="20px" />
             <h3 className="shipStatusNavbar--back--text">Back to ships</h3>
           </div>
-        </Link>
+        </NavLink>
       </div>
       <div className="shipStatusNavbar--shipname">
         <h1 className="shipStatusNavbar--shipname--header">
           {shipDetails.symbol}
         </h1>
         <h2 className="shipStatusNavbar--shipname--frame">
-          {shipDetails.frame}
+          {shipDetails.frame.name}
         </h2>
       </div>
       <div className="shipStatusNavbar--nav">
-        <Link to="." className="shipStatusNavbar--nav--link">
+        <NavLink
+          to="."
+          className={({ isActive }) =>
+            isActive
+              ? "shipStatusNavbar--nav--link--active"
+              : "shipStatusNavbar--nav--link"
+          }
+        >
           Status
-        </Link>
-        <Link to="navigation" className="shipStatusNavbar--nav--link">
+        </NavLink>
+        <NavLink
+          to="navigation"
+          className={({ isActive }) =>
+            isActive
+              ? "shipStatusNavbar--nav--link--active"
+              : "shipStatusNavbar--nav--link"
+          }
+        >
           Navigation
-        </Link>
-        <Link to="cargo" className="shipStatusNavbar--nav--link">
+        </NavLink>
+        <NavLink
+          to="cargo"
+          className={({ isActive }) =>
+            isActive
+              ? "shipStatusNavbar--nav--link--active"
+              : "shipStatusNavbar--nav--link"
+          }
+        >
           Cargo
-        </Link>
+        </NavLink>
       </div>
-      <Outlet />
+      <Outlet context={shipDetails} />
     </div>
   );
 }
