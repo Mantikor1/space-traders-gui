@@ -183,6 +183,8 @@ body {
   margin: 0;
   color: #afafaf;
   flex: 1;
+  /* Needs min and max width, otherwise the width increases slightly on the ship status page, when the page width is low */
+  min-width: 243px;
   max-width: 243px;
   background-color: black;
 }
@@ -292,4 +294,72 @@ body {
   gap: 19px;
   line-break: none;
   white-space: nowrap;
+}
+
+.shipStatusNavbar--back--layout {
+  width: 100%;
+  height: 33px;
+  background-color: #272727;
+}
+
+.shipStatusNavbar--back {
+  position: absolute;
+  margin-left: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  height: 33px;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+  background-color: #272727;
+  color: #afafaf;
+}
+
+.shipStatusNavbar--back--text {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.shipStatusNavbar--back--text:hover {
+  text-decoration-line: underline;
+}
+
+.shipStatusNavbar--shipname {
+  display: flex;
+  align-items: center;
+  background-color: #272727;
+  padding: 53px 0 0 25px;
+  gap: 20px;
+}
+
+.shipStatusNavbar--shipname--header {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.shipStatusNavbar--shipname--frame {
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+  color: #aaaa;
+}
+
+.shipStatusNavbar--nav {
+  background-color: #272727;
+  padding: 50px 0 10px 25px;
+}
+
+.shipStatusNavbar--nav--link {
+  padding-right: 29px;
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration-line: none;
+}
+
+.shipStatusNavbar--nav--link:hover {
+  text-decoration-line: underline;
 }
