@@ -1,411 +1,414 @@
 body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
+	margin: 0;
+	height: 100%;
+	font-family: "Inter", sans-serif;
 }
 
 .wrapper {
-  display: flex;
-  height: 100%;
-  min-height: 100vh;
+	display: flex;
+	/* height: 100%; */
+	min-height: 100vh;
 }
 .login--navbar {
-  margin: 0;
-  color: white;
-  flex: 1;
-  max-width: 243px;
-  background-color: black;
+	margin: 0;
+	color: white;
+	flex: 1;
+	max-width: 243px;
+	background-color: black;
 }
 
 .login--navbar--title {
-  margin: 0;
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 28px;
-  color: #afafaf;
-  text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	font-weight: 700;
+	font-size: 28px;
+	color: #afafaf;
+	text-align: center;
 }
 
 .login--navbar--line {
-  margin-top: 53px;
-  width: 222px;
-  color: #afafaf;
+	margin-top: 53px;
+	width: 222px;
+	color: #afafaf;
 }
 
 .login {
-  flex: 1;
-  background-color: #272727;
-  text-align: center;
+	flex: 1;
+	background-color: #272727;
+	text-align: center;
 }
 
 .login--header {
-  margin-top: 336px;
-  margin-bottom: 0;
-  color: #afafaf;
+	margin-top: 336px;
+	margin-bottom: 0;
+	color: #afafaf;
 }
 
 .login--form--token {
-  margin-top: 32.5px;
-  width: 321px;
-  height: 52px;
-  box-shadow: none;
-  padding-left: 76px;
-  border-radius: 30px;
-  outline: none;
-  font-size: 20px;
-  border: 0px solid;
-  background: url("./assets/key.svg") no-repeat 25px;
-  background-color: white;
+	margin-top: 32.5px;
+	width: 321px;
+	height: 52px;
+	box-shadow: none;
+	padding-left: 76px;
+	border-radius: 30px;
+	outline: none;
+	font-size: 20px;
+	border: 0px solid;
+	background: url("./assets/key.svg") no-repeat 25px;
+	background-color: white;
 }
 
 .login--form--button {
-  margin-top: 14.5px;
-  margin-bottom: 35px;
-  width: 399px;
-  height: 52px;
-  border-radius: 30px;
-  border: 0 solid;
-  font-size: 20px;
-  background-color: #262e73;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  color: #afafaf;
+	margin-top: 14.5px;
+	margin-bottom: 35px;
+	width: 399px;
+	height: 52px;
+	border-radius: 30px;
+	border: 0 solid;
+	font-size: 20px;
+	background-color: #262e73;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	color: #afafaf;
 }
 
 .login--form--button:hover {
-  background-color: #2e3aa3;
+	background-color: #2e3aa3;
 }
 
 .registration {
-  flex: 1;
-  background-color: #272727;
-  text-align: center;
+	flex: 1;
+	background-color: #272727;
+	text-align: center;
 }
 
 .registration--header {
-  margin-top: 336px;
-  margin-bottom: 0;
-  color: #afafaf;
+	margin-top: 336px;
+	margin-bottom: 0;
+	color: #afafaf;
 }
 
 .registration--form--username {
-  margin-top: 32.5px;
-  width: 321px;
-  height: 52px;
-  box-shadow: none;
-  padding-left: 76px;
-  border-radius: 30px;
-  outline: none;
-  font-size: 20px;
-  border: 0px solid;
-  background: url("./assets/account_circle.svg") no-repeat 25px;
-  background-color: white;
+	margin-top: 32.5px;
+	width: 321px;
+	height: 52px;
+	box-shadow: none;
+	padding-left: 76px;
+	border-radius: 30px;
+	outline: none;
+	font-size: 20px;
+	border: 0px solid;
+	background: url("./assets/account_circle.svg") no-repeat 25px;
+	background-color: white;
 }
 
 .registration--form--faction {
-  margin-top: 14.5px;
-  width: 212px;
-  height: 52px;
-  padding-left: 12.5px;
-  background-color: white;
-  color: #939393;
-  font-size: 20px;
-  border: 0px solid;
-  box-shadow: none;
-  border-radius: 15px;
+	margin-top: 14.5px;
+	width: 212px;
+	height: 52px;
+	padding-left: 12.5px;
+	background-color: white;
+	color: #939393;
+	font-size: 20px;
+	border: 0px solid;
+	box-shadow: none;
+	border-radius: 15px;
 }
 
 .registration--token {
-  margin-top: 18px;
-  min-width: 225px;
-  max-width: 399px;
-  min-height: 49px;
-  border: 1px solid #aaaa;
-  border-radius: 20px;
-  background-color: #272727;
-  color: white;
-  font-size: 24px;
-  font-weight: 300;
-  font-style: italic;
-  display: inline-block;
-  user-select: text;
+	margin-top: 18px;
+	min-width: 225px;
+	max-width: 399px;
+	min-height: 49px;
+	border: 1px solid #aaaa;
+	border-radius: 20px;
+	background-color: #272727;
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	display: inline-block;
+	/* user-select: text; */
 }
 
 .registration--token--text {
-  overflow: hidden;
-  word-wrap: break-word;
+	overflow: hidden;
+	word-wrap: break-word;
 }
 
 .registration--token img {
-  float: left;
-  margin-left: 17px;
-  margin-top: 3px;
-  width: 40px;
-  height: 27px;
+	float: left;
+	margin-left: 17px;
+	margin-top: 3px;
+	width: 40px;
+	height: 27px;
 }
 
 .registration--token:hover {
-  background-color: #4d4d4d;
+	background-color: #4d4d4d;
 }
 
 .registration--form--button {
-  margin-top: 14.5px;
-  margin-bottom: 35px;
-  width: 399px;
-  height: 52px;
-  border-radius: 30px;
-  border: 0 solid;
-  font-size: 20px;
-  background-color: #262e73;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  color: #afafaf;
+	margin-top: 14.5px;
+	margin-bottom: 35px;
+	width: 399px;
+	height: 52px;
+	border-radius: 30px;
+	border: 0 solid;
+	font-size: 20px;
+	background-color: #262e73;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	color: #afafaf;
 }
 
 .registration--form--button:hover {
-  background-color: #2e3aa3;
+	background-color: #2e3aa3;
 }
 
 .registration--errorMessage {
-  margin-top: 14.5px;
-  margin-bottom: 0;
-  font-style: italic;
-  font-weight: 300;
-  color: #970202;
+	margin-top: 14.5px;
+	margin-bottom: 0;
+	font-style: italic;
+	font-weight: 300;
+	color: #970202;
 }
 
 .registration--successMessage {
-  margin-top: 17.5px;
-  margin-bottom: 0;
-  font-style: italic;
-  font-weight: 300;
-  color: #099f06;
+	margin-top: 17.5px;
+	margin-bottom: 0;
+	font-style: italic;
+	font-weight: 300;
+	color: #099f06;
 }
 
 .navbar {
-  margin: 0;
-  color: #afafaf;
-  flex: 1;
-  /* Needs min and max width, otherwise the width increases slightly on the ship status page, when the page width is low */
-  min-width: 243px;
-  max-width: 243px;
-  background-color: black;
+	margin: 0;
+	color: #afafaf;
+	flex: 1;
+	/* Needs min and max width, otherwise the width increases slightly on the ship status page, when the page width is low */
+	min-width: 243px;
+	max-width: 243px;
+	background-color: black;
 }
 
 .navbar--title {
-  margin: 0;
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 28px;
-  text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	font-weight: 700;
+	font-size: 28px;
+	text-align: center;
 }
 
 .navbar--line {
-  margin-top: 53px;
-  width: 222px;
-  margin-bottom: 36px;
+	margin-top: 53px;
+	width: 222px;
+	margin-bottom: 36px;
 }
 
 .navbar--item {
-  margin-top: 0;
-  width: 100%;
-  height: 62px;
-  color: #afafaf;
-  display: flex;
-  align-items: center;
+	margin-top: 0;
+	width: 100%;
+	height: 62px;
+	color: #afafaf;
+	display: flex;
+	align-items: center;
 }
 
 .navbar--item:hover {
-  background-color: #5f5f5f;
+	background-color: #5f5f5f;
 }
 
 .navbar--item--icon {
-  margin-left: 30px;
-  width: 24px;
-  height: 24px;
+	margin-left: 30px;
+	width: 24px;
+	height: 24px;
 }
 
 .navbar--item--title {
-  margin-left: 14px;
-  font-size: 20px;
+	margin-left: 14px;
+	font-size: 20px;
 }
 
 .mainContent {
-  flex: 1;
+	flex: 1;
 }
 
 .accountDetails {
-  background-color: #272727;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding-top: 23px;
-  padding-right: 25px;
-  gap: 14px;
+	background-color: #272727;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	padding-top: 23px;
+	padding-right: 25px;
+	gap: 14px;
 }
 
 .accountDetails--credits {
-  color: #099f06;
-  font-size: 20px;
-  margin: 0;
+	color: #099f06;
+	font-size: 20px;
+	margin: 0;
 }
 
 .accountDetails--name {
-  color: #afafaf;
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0;
+	color: #afafaf;
+	font-weight: 700;
+	font-size: 16px;
+	margin: 0;
 }
 
 .fleet {
-  flex: 1;
-  min-height: 100vh;
-  padding-left: 32px;
-  padding-right: 32px;
-  background-color: #272727;
-  color: #afafaf;
+	flex: 1;
+	min-height: 100vh;
+	padding-left: 32px;
+	padding-right: 32px;
+	background-color: #272727;
+	color: #afafaf;
 }
 
 .fleet--header {
-  margin-top: 0;
-  margin-bottom: 35px;
+	margin-top: 0;
+	margin-bottom: 35px;
 }
 
 .fleet--ship {
-  color: #afafaf;
-  display: flex;
-  padding-left: 31px;
-  padding-right: 31px;
-  height: 74px;
-  border: 2px solid #aaaa;
-  border-radius: 22px;
-  align-items: center;
-  font-size: 24px;
-  font-weight: 400;
+	color: #afafaf;
+	display: flex;
+	padding: 0 31px;
+	margin-bottom: 10px;
+	height: 74px;
+	border: 2px solid #aaaa;
+	border-radius: 22px;
+	align-items: center;
+	font-size: 24px;
+	font-weight: 400;
 }
 
 .fleet--ship:hover {
-  background-color: #525252;
+	background-color: #525252;
 }
 
 .fleet--ship--details {
-  margin-left: auto;
-  padding-left: 19px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 19px;
-  line-break: none;
-  white-space: nowrap;
+	margin-left: auto;
+	padding-left: 19px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 19px;
+	line-break: none;
+	white-space: nowrap;
 }
 
 .shipStatusNavbar--back--layout {
-  width: 100%;
-  height: 33px;
-  background-color: #272727;
+	width: 100%;
+	height: 33px;
+	background-color: #272727;
 }
 
 .shipStatusNavbar--back {
-  position: absolute;
-  margin-left: 25px;
-  padding-left: 5px;
-  padding-right: 5px;
-  display: flex;
-  height: 33px;
-  gap: 10px;
-  align-items: center;
-  justify-content: left;
-  background-color: #272727;
-  color: #afafaf;
+	position: absolute;
+	margin-left: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: flex;
+	height: 33px;
+	gap: 10px;
+	align-items: center;
+	justify-content: left;
+	background-color: #272727;
+	color: #afafaf;
 }
 
 .shipStatusNavbar--back--text {
-  font-weight: 200;
-  font-size: 20px;
+	font-weight: 200;
+	font-size: 20px;
 }
 
 .shipStatusNavbar--back--text:hover {
-  text-decoration-line: underline;
+	text-decoration-line: underline;
 }
 
 .shipStatusNavbar--shipname {
-  display: flex;
-  align-items: center;
-  background-color: #272727;
-  padding: 53px 0 0 25px;
-  gap: 20px;
+	display: flex;
+	align-items: center;
+	background-color: #272727;
+	padding: 53px 0 0 25px;
+	gap: 20px;
 }
 
 .shipStatusNavbar--shipname--header {
-  margin: 0;
-  font-weight: 700;
-  font-size: 30px;
-  color: white;
+	margin: 0;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
 }
 
 .shipStatusNavbar--shipname--frame {
-  margin: 0;
-  font-size: 20px;
-  font-style: italic;
-  color: #aaaa;
+	margin: 0;
+	font-size: 20px;
+	font-style: italic;
+	color: #aaaa;
 }
 
 .shipStatusNavbar--nav {
-  background-color: #272727;
-  padding: 50px 0 10px 25px;
+	background-color: #272727;
+	padding: 50px 0 10px 25px;
 }
 
 .shipStatusNavbar--nav--link {
-  padding-right: 29px;
-  color: #afafaf;
-  font-weight: 400;
-  font-size: 20px;
-  text-decoration-line: none;
+	padding-right: 29px;
+	color: #afafaf;
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration-line: none;
 }
 
 .shipStatusNavbar--nav--link--active {
-  padding-right: 29px;
-  color: #afafaf;
-  font-weight: 400;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration-line: "underline";
+	padding-right: 29px;
+	color: #afafaf;
+	font-weight: 400;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration-line: "underline";
 }
 
 .shipStatusNavbar--nav--link:hover {
-  text-decoration-line: underline;
+	text-decoration-line: underline;
 }
 
 .shipStatus--layout {
-  width: 100%;
-  min-height: 100vh;
-  max-width: 100vw;
-  background-color: #272727;
+	width: 100%;
+	min-height: 100vh;
+	max-width: 100vw;
+	background-color: #272727;
 }
 
 .shipStatus {
-  position: absolute;
-  margin: 37px 59px 0 25px;
-  padding: 32px 31px;
-  max-width: 100vw;
-  border: #aaaa solid 2px;
-  border-radius: 22px;
-  display: flex;
-  color: #afafaf;
-  gap: 23.3px;
+	position: absolute;
+	margin: 37px 59px 0 25px;
+	padding: 32px 31px;
+	max-width: 100vw;
+	border: #aaaa solid 2px;
+	border-radius: 22px;
+	display: flex;
+	color: #afafaf;
+	gap: 23.3px;
 }
 
 .shipStatus--element {
-  background-color: #403f3f;
-  border-radius: 20px;
-  padding: 15px 18px;
+	background-color: #403f3f;
+	border-radius: 20px;
+	padding: 15px 18px;
+	width: 246px;
+	height: 213px;
 }
 
 .shipStatus--element--header {
-  color: #c8c8c8;
-  font-weight: 700;
-  font-size: 24px;
+	color: #c8c8c8;
+	font-weight: 700;
+	font-size: 24px;
 }
 
 .shipStatus--element--details {
-  font-size: 24px;
-  color: white;
-  white-space: nowrap;
+	font-size: 24px;
+	color: white;
+	white-space: nowrap;
 }
